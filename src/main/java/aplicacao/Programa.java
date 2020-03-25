@@ -26,5 +26,8 @@ public class Programa {
 		//Dando commit na transação
 		em.getTransaction().commit();
 		System.out.println("Pronto!");
+		//Fechando em e emf
+		em.close();
+		emf.close();
 	}
 }
